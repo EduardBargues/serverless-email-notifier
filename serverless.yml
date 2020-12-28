@@ -20,4 +20,4 @@ functions:
   weekendReminder:
     handler: functions/sendNotificationEveryWeekend.handler
     events:
-      - schedule: cron(30 22 ? * SUN,SAT *)
+      - schedule: cron(0 0 0 ? * SUN,SAT *)
